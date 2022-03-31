@@ -49,16 +49,13 @@ _Tabela mobile:_
 _Tela com tema escuro:_
 <img src=".github/telaDark.png"/>
 
-_Tela com tema escuro:_
-<img src=".github/telaDark.png"/>
-
 <p align="center">
 
-_Cards Mobile no dark mode:_
-<img src=".github/telaDark.png"/>
+_Cards e table Mobile no dark mode:_
 
-_table Mobile no dark mode:_
-<img src=".github/telaDark.png"/>
+<img src=".github/cardsMobileDark.png"/>
+
+<img src=".github/tableMobileDark.png"/>
 
 </p>
 
