@@ -13,26 +13,27 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
+  <body id="body">
+    <header id="header">
       <img
         src="./assets/logo.svg"
         alt="Logo da Dev Finances, essa logo é uma imagem onde esta escrito dev finances separados por um ponto final e o s no final da palavra finances é um sifrão"
       />
+      <button id="dark-mode" onclick="DarkMode.darkColors()">Dark mode</button>
     </header>
 
     <main class="container">
       <section id="balance">
         <h2 class="sr-only">Balanço</h2>
 
-        <div class="card">
+        <div id="incomes" class="card">
           <h3>
             <span> Entradas </span>
             <img src="./assets/income.svg" alt="imagem de entradas" />
           </h3>
           <p id="incomeDisplay">R$ 0,00</p>
         </div>
-        <div class="card">
+        <div id="expenses" class="card">
           <h3>
             <span> Saídas </span>
             <img src="./assets/expense.svg" alt="imagem de saídas" />
@@ -57,7 +58,7 @@
 
         <table id="data-table">
           <thead>
-            <tr>
+            <tr id="row-header">
               <th>Descrição</th>
               <th>Valor</th>
               <th>Data</th>
@@ -111,7 +112,7 @@
         </div>
       </div>
     </div>
-    <footer><p>Dev.finance$</p></footer>
+    <footer id="footer"><p>Dev.finance$</p></footer>
 
     <script src="./script.js"></script>
   </body>

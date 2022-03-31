@@ -1,9 +1,17 @@
 /* Global =========================*/
 :root {
+  /* cores padrão */
+
+  --background-body: #f0f2f5;
   --dark-blue: #363f5f;
   --green: #49aa26;
   --light-green: #3dd705;
   --red: #e92929;
+
+  /* Dark mode */
+  --dark-header: #161b22;
+  --dark-bacground: #0d1117;
+  --dark-card: #30363d;
 }
 
 * {
@@ -17,7 +25,11 @@ html {
 }
 
 body {
-  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  background: var(--background-body);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -102,6 +114,18 @@ button:hover {
   opacity: 1;
 }
 
+header button#dark-mode {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 80px;
+  height: 25px;
+  padding: 5px;
+
+  background: none;
+}
+
 /* Header =========================*/
 header {
   background: #2d4a22;
@@ -154,6 +178,10 @@ header {
   color: white;
 }
 
+.card.total.loss {
+  background: var(--red);
+}
+
 /* Table =========================*/
 #transaction {
   display: block;
@@ -177,12 +205,13 @@ table tbody tr td:last-child {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-table thead th {
+thead {
   background: white;
+}
 
+table thead th {
   font-weight: normal;
   padding: 1rem 2rem;
-
   text-align: left;
 }
 
@@ -191,7 +220,7 @@ table tbody tr {
 }
 
 table tbody tr:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 table tbody td {
@@ -283,10 +312,26 @@ input {
 
 /* Footer =========================*/
 footer {
+  position: relative;
+
   text-align: center;
   padding: 4rem 0 2rem;
   color: var(--dark-blue);
   opacity: 0.6;
+}
+
+.dark-header {
+  background: var(--dark-header);
+}
+
+.dark-body {
+  background: var(--dark-bacground);
+  color: #fff;
+}
+
+.dark-card {
+  background: var(--dark-card);
+  color: #fff;
 }
 
 /* Responsive =========================*/

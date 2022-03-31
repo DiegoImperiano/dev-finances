@@ -113,14 +113,22 @@ const DOM = {
 
   clearTransactions() {
     DOM.transactionsContainer.innerHTML = ''
+  },
+
+  colorTotal() {
+    if (Transaction.total() < 0) {
+      return document.querySelector('.card.total').classList.add('loss')
+    } else {
+      return document.querySelector('.card.total').classList.remove('loss')
+    }
   }
 }
 
 const Utils = {
   formatAmount(value) {
-    value = Number(value.replace(/\.\,/g, '')) * 100
+    value = value * 100
 
-    return value
+    return Math.round(value)
   },
 
   formatDate(date) {
@@ -204,6 +212,35 @@ const Form = {
   }
 }
 
+const DarkMode = {
+  darkColors() {
+    let body = document.getElementById('body')
+    let header = document.getElementById('header')
+    let footer = document.getElementById('footer')
+    let incomes = document.getElementById('incomes')
+    let expenses = document.getElementById('expenses')
+    let rowHeader = document.getElementById('row-header')
+
+    console.log(body)
+
+    if (body.classList.contains('dark-body')) {
+      body.classList.remove('dark-body')
+      footer.classList.remove('dark-body')
+      header.classList.remove('dark-header')
+      incomes.classList.remove('dark-card')
+      expenses.classList.remove('dark-card')
+      rowHeader.classList.remove('dark-card')
+    } else {
+      body.classList.add('dark-body')
+      footer.classList.add('dark-body')
+      header.classList.add('dark-header')
+      incomes.classList.add('dark-card')
+      expenses.classList.add('dark-card')
+      rowHeader.classList.add('dark-card')
+    }
+  }
+}
+
 const App = {
   init() {
     Transaction.all.forEach((transaction, index) => {
@@ -213,6 +250,9 @@ const App = {
     DOM.updateBalance()
 
     Storage.set(Transaction.all)
+
+    console.log(Transaction.total())
+    DOM.colorTotal()
   },
 
   reload() {
@@ -220,5 +260,7 @@ const App = {
     App.init()
   }
 }
+
+DarkMode.darkColors()
 
 App.init()
