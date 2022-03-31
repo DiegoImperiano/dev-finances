@@ -30,15 +30,15 @@ _Tela: inicial com saldo negativo_
 _Formulario para cadastrar uma nova transação:_
 <img src=".github/modal.png"/>
 
+</p>
+
+_Cards e tabela mobile:_
+
 <p align="center">
 
-_Cards mobile:_
 <img src=".github/cardsMobile.png"/>
 
-_Tabela mobile:_
 <img src=".github/tableMobile.png"/>
-
-</p>
 
 </p>
 
@@ -49,15 +49,15 @@ _Tabela mobile:_
 _Tela com tema escuro:_
 <img src=".github/telaDark.png"/>
 
-<p align="center">
+</p>
 
 _Cards e table Mobile no dark mode:_
+
+<p align="center">
 
 <img src=".github/cardsMobileDark.png"/>
 
 <img src=".github/tableMobileDark.png"/>
-
-</p>
 
 </p>
 
@@ -74,7 +74,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## Como rodar?
 
 - É uma aplicação simples então basta abrir o arquivo index.html
-- Também é possível vê-lo funcionando clicando [aqui](https://diegoimperiano.github.io/dev-finances/).
+- Também é possível vê-lo funcionando clicando [aqui](https://diegoimperiano.github.io/maratona-discover/).
 
 ## To do
 
@@ -83,11 +83,11 @@ Algumas ideias para melhorar a aplicação:
 - Fazer melhorias no tema dark.
 - Encontrar e tratar possíveis erros.
 
-Sinta-se livre para sugerir novas melhorias e correções [criando uma issue](https://github.com/DiegoImperiano/dev-finances/issues/new) 😉.
+Sinta-se livre para sugerir novas melhorias e correções [criando uma issue](https://github.com/DiegoImperiano/maratona-discover/issues/new) 😉.
 
 ## Licença e autor
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/DiegoImperiano/dev-finances/blob/main/LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/DiegoImperiano/maratona-discover/blob/main/LICENSE) para mais detalhes.
 
 Desenvolvido por [Diego Imperiano](https://github.com/DiegoImperiano).
 
