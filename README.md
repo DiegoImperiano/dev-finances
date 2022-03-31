@@ -38,7 +38,7 @@ _Cards e tabela mobile:_
 
 <img src=".github/cardsMobile.png"/>
 
-<img src=".github/tableMobile.png"/>
+<img src=".github/tablesMobile.png"/>
 
 </p>
 
