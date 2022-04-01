@@ -4,7 +4,7 @@ const Modal = {
     document.querySelector('.modal-overlay ').classList.add('active')
   },
   close() {
-    // remove a classe active a div.modal-overlay
+    // remove a classe active a div.modal-overlay e limpa os campos do modal
     document.querySelector('.modal-overlay ').classList.remove('active')
   }
 }
@@ -117,8 +117,10 @@ const DOM = {
 
   colorTotal() {
     if (Transaction.total() < 0) {
+      // caso o total seja negativo uma classe "loss" é adicionada a tag com classe card e total
       return document.querySelector('.card.total').classList.add('loss')
     } else {
+      // caso o total seja positivo a classe "loss" é remobida  da tag com classe card e total
       return document.querySelector('.card.total').classList.remove('loss')
     }
   }
@@ -220,8 +222,6 @@ const DarkMode = {
     let incomes = document.getElementById('incomes')
     let expenses = document.getElementById('expenses')
     let rowHeader = document.getElementById('row-header')
-
-    console.log(body)
 
     if (body.classList.contains('dark-body')) {
       body.classList.remove('dark-body')

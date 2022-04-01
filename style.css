@@ -296,6 +296,7 @@ input {
 }
 
 .input-group small {
+  color: black;
   opacity: 0.4;
 }
 
