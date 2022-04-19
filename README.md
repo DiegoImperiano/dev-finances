@@ -1,4 +1,6 @@
-# Dev.finance$
+<p align="center">
+  <img alt="Dev finances" src=".github/logo.svg" width="160px">
+</p>
 
 <p align="center">
   <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
